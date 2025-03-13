@@ -1,6 +1,3 @@
-const myHeading = document.querySelector("h1");
-myHeading.textContent = "Hello world!";
-
 const myImage = document.querySelector("img");
 
 /* Logo Image Changer */
@@ -13,14 +10,23 @@ myImage.addEventListener("click", () => {
   }
 });
 
-
-/* Change user button */
+/* Button */
 let myButton = document.querySelector("button");
 let myHeading = document.querySelector("h1");
 
-/* Greeting User */
+/* User Name Change */
 function setUserName() {
     const myName = prompt("Please enter your name.");
-    localStorage.setItem("name", myName);
-    myHeading.textContent = `Mozilla is cool, ${myName}`;
+    if (!myName) {
+      setUserName();
+    } else {
+      localStorage.setItem("name", myName);
+      myHeading.textContent = `Mozilla is cool, ${myName}`;
+    }
   }
+
+  myButton.addEventListener("click", () => {
+    setUserName();
+  });
+
+  
