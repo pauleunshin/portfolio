@@ -1,13 +1,41 @@
 *{
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
 
+html {
+    font-size: 14px;
+    font-family: "Roboto Mono", sans-serif;
+    background-color: #00539f; 
+}
+
+h1 {
+    margin: 0;
+    padding: 20px 0;
+    font-size: 60px;
+    text-align: center;
+    text-shadow: 3px 3px 1px palevioletred
+}
+
+p, li{
+    width: 500px;
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 1px;
+}
+
 body{
-    background: #080808;
+    width: 600px;
+    background: #ff9500;
     color: #fff;
+    margin: 10px auto;
+    padding: 0 20px 20px 20px;
+    border: 5px solid black; 
+}
+
+img{
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
 }
 
 #header{
